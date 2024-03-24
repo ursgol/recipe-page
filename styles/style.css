@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:hsl(14, 45%, 36%);
+    --secondary-color:hsl(332, 51%, 32%);
+
+    --neutral-white-color: hsl(0, 0%, 100%);
+    --neutral-rose-white:hsl(330, 100%, 98%);
+    --neutral-eggshell-color: hsl(30, 54%, 90%);
+    --neutral-light-grey: hsl(30, 18%, 87%);
+    --neutral-wengebrown-color: hsl(30, 10%, 34%);
+    --neutral-darkcharcoal-color: hsl(24, 5%, 18%);
+}
+
+body{
+    font-size: 16px;
+    font-family: "Outfit" ,"Young Serif", serif;
+    background-color: var(--neutral-eggshell-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: var(--neutral-white-color);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    max-width: 375px;
+
+
+}
+
+article{
+    padding: 20px;
+}
+
+.content__description{
+    padding: 10px;
+}
+
+h1{
+    font-family: "Young Serif";
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-wrap: wrap;
+}
+
+.desciption--paragraph{
+    padding-left: 0px;
+    padding-right: 5px;
+}
+h3{
+    color: var(--secondary-color);
+}
+
+.preparation-time, .list-ingredients{
+    margin-top: 20px;
+    background-color: var(--neutral-rose-white);
+    padding: 20px 30px;
+    border-radius: 10px;
+
+}
+
+.list-ingredients{
+    background-color: var(--neutral-white);
+
+}
+
+h4, h5, h6{
+    color: var(--primary-color);
+    font-size:1.8rem;
+    padding: 20px auto;
+}
+
+.preparation-time ul li,
+.list-ingredients ul li{
+    padding-top: 15px;
+}
+
+.prep-instructions{
+    margin:20px;
+}
+
+.prep-instructions ul li{
+    padding-top: 20px;
+}
+
+.horizontal-line{
+    color: var(--neutral-light-grey);
+}
+
+.nutrition-table p{
+    padding: 20px 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: var(--secondary-color);
+  }
+
+  th{
+    font-weight: 400;
+    color:black;
+  }
+
+  td{
+    font-weight: 800;
+
+  }
+  
+
+
+
+@media only screen and (min-width: 376px) {
+    .container{
+        padding: 20px;
+        margin: 100px auto;
+    }
+  }
+
